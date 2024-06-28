@@ -1,0 +1,14 @@
+[Unit]
+Description=Camera Capture Service
+After=network.target
+
+[Service]
+ExecStart=/usr/bin/python3 /home/louis/camera_script/camera_capture.py
+WorkingDirectory=/home/louis/camera_script
+StandardOutput=inherit
+StandardError=inherit
+Restart=always
+User=louis
+
+[Install]
+WantedBy=multi-user.target
