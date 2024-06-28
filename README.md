@@ -5,7 +5,8 @@ Instructions:
 Connect a Raspbery Pi camera Rev. 1.3 to a Raspberry Pi running raspbian.
 Setup the raspberry pi to create a hotspot (I do this via an external wifi antenna for extra range).
 
-Place the files camera_capture.py and server_for_images.py in a folder called home/your_username/camera_script. In server.py you will need to change     
+Place the files camera_capture.py and server_for_images.py in a folder called home/your_username/camera_script.
+In server.py you will need to change     
 os.chdir('/home/louis/camera_script')  # Change to your images directory
 In camera_capture.py you will need to change:
  directory = "/home/louis/camera_script" # change to your directory
